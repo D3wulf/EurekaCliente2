@@ -9,11 +9,6 @@ import io.micrometer.core.instrument.MeterRegistry;
 public class clienteController {
 
 
-	
-	
-	
-	
-		
 		private Counter counter;
 		
 		//Utilidad de prometheus MeterRegistry

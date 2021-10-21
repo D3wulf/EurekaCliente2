@@ -15,7 +15,7 @@ public class ClienteEndpoint {
 	@GetMapping("/")
 	public ResponseEntity<String> endPointCustomizado(){
 		
-		return new ResponseEntity<>("Hola desde el endpoint customizado", HttpStatus.OK);
+		return new ResponseEntity<>("Hola desde el endpoint customizado del cliente!", HttpStatus.OK);
 		
 	}
 	
@@ -23,7 +23,7 @@ public class ClienteEndpoint {
 	@GetMapping("/persona/{nombre}")
 	public String prueba(@PathVariable String nombre) {
 		
-		String respuesta = "Hola: " + nombre;
+		String respuesta = "Hola: " + nombre + " estás en la máquina cliente de eureka";
 		return respuesta;
 		
 	}
